@@ -15,8 +15,8 @@ export class GithubService {
 
     private url: string = "https://api.github.com/graphql";
     private searchQuery: string = "angular";
-    private token: string = "d0c7c65215b3fc719dd607bd83e9647cae4c22dd"
-    private userName: string = "JaswinderLayal";
+    private token: string = "c4ada75c50fe387db68fa64c1bd6c12bcf451218"
+    private userName: string = "JaswinderLayal7790";
     public myFavReposIds=[];
     public myFavRepos=new Subject<repo>();
     public removeFavRepo=new Subject<string>();
