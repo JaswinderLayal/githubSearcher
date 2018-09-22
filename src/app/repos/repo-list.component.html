@@ -1,0 +1,20 @@
+
+
+<table [hidden]="!repos.length">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Language</th>
+            <th>Latest Tag</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let repo of repos">
+            <td><a target="_blank" href="{{repo.link}}">{{repo.name}}</a></td>
+            <td>{{repo.lang}}</td>
+            <td>{{repo.tag}}</td>
+            <td ><a [hidden]="repo.isFavourite" href="javascript:void(0)" (click)="addFavourite(repo)">Add</a></td>
+        </tr>
+    </tbody>
+</table>

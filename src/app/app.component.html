@@ -1,0 +1,19 @@
+<header>My Github Favourites</header>
+<main>
+  <section>
+    <form #loginForm="ngForm" novalidate (submit)="search(searchText.value)">
+      <div class="searchbar-wrapper">
+        <input class="input-control" type="text" #searchText (keyup)="clearResult(searchText.value)">
+        <button class="submit-btn" type="submit">Submit</button>
+      </div>
+
+    </form>
+
+    <div *ngIf="loading" class="default-text">Loading...</div>
+
+    <gtc-repos [repos]="repos"></gtc-repos>
+  </section>
+  <aside>
+    <gtc-fav-list></gtc-fav-list>
+  </aside>
+</main>

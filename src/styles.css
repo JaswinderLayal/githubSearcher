@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: sans-serif;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+default-text{
+    color: grey;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
+header {
+    padding: 32px;
+    font-size: 34px;
+    text-align: center;
+    background: #7433F1;
+    color: white;
+    vertical-align: middle;
+    
+}
+
+main{
+    max-width: 1600px;
+    width:100%;
+   
+   
+}
+section,aside{
+    width:50%;
+    float: left;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    min-height: 600px;
+}
+aside{
+    background: #F3ECFE;
+}
+.searchbar-wrapper{
+    padding: 5px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.input-control{
+    width:70%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    border:1px solid grey;
+    border-radius: 5px;
+}
+.submit-btn{
+    padding: 10px 20px;
+    background:#7433F1;
+    color: white;
+    margin-left: 3px;
+    border:1px solid #7433F1;
+    font-size:15px;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+table{
+    width:100%;
+}
+table tr th, table tr td{
+    text-align: left;
+    padding: 5px;
+}
+a{
+    color:#7433F1;
+}
+
+table{
+    color: #455A64;
+    margin-top: 8px;
+}
+
+table tr th {
+    border-bottom: 1px solid #00000024;
+    padding: 12px 4px;
+    font-size: 17px;
+    color: #263238;
+}

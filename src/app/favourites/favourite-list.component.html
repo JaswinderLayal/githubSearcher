@@ -1,0 +1,20 @@
+
+<h4 [hidden]="favourites.length" style="text-align: center;font-style: italic">No Favourites </h4>
+<table [hidden]="!favourites.length">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Language</th>
+                <th>Latest Tag</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr *ngFor="let repo of favourites">
+                <td><a target="_blank" href="{{repo.link}}">{{repo.name}}</a></td>
+                <td>{{repo.lang}}</td>
+                <td>{{repo.tag}}</td>
+                <td><a (click)="removeFavourite(repo)" href="javascript:void(0)">Remove</a></td>
+            </tr>
+        </tbody>
+    </table>
